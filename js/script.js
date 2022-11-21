@@ -11,6 +11,13 @@ function home(){
     window.location="/index.html";
 }
 
+function show(){
+  document.getElementById("dark").style.display = "all";
+}
+
+function hide(){
+  document.getElementById("dark").style.display = "none";
+}
 
 /*
 function getMouseCoords(e) {
