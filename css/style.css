@@ -222,8 +222,12 @@ a {
 }
 
 
-
-
+.filter-red{
+  filter: invert(41%) sepia(74%) saturate(3137%) hue-rotate(332deg) brightness(100%) contrast(105%);
+}
+.filter-green {
+  filter: invert(71%) sepia(15%) saturate(2100%) hue-rotate(63deg) brightness(95%) contrast(84%);
+}
 
 /*I totally didn't steal this*/
 
