@@ -22,8 +22,9 @@ body {
     top:0;
     box-shadow: 5px 10px 25px 10px rgba(0, 0, 0, 0.200);
     z-index:1;
-    background-color: rgba(62, 62, 62, 0.5);
     margin-left:-1%;
+    background: transparent;
+    
 }
 
 .buttontop {
@@ -145,6 +146,9 @@ margin-left: 85%;
     margin-left: 2%;
 }
 
+#idk {
+    margin-left:27%;
+}
 
 h {
     font-family: lexend;
@@ -190,9 +194,137 @@ p {
     user-select: none;
 }
 
+p1 {
+    font-family: lexend;
+    z-index:1;
+    font-size: 2vw;
+    color: white;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+a {
+    font-family: lexend;
+    z-index:1;
+    font-size: 2vw;
+    color: white;
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
 #shopbodybtn {
     margin-top: 70%;
     margin-left: 73%;
     position:fixed;
     display:inline-block;
 }
+
+
+
+
+
+/*I totally didn't steal this*/
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .row {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    height:10%;
+    width: 30%;
+    background: #363636;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    transition: 0.5s;
+  }
+  
+  .card-header-red {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #363636;
+  }
+
+  .card-header-green {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #81d66c, #25c410);
+    color: #363636;
+  }
+
+  .card-header-blue {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #4687e9, #46c2f3);
+    color: #363636;
+  }
+  
+  .card-body {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .card-body .btn-red {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+
+  .card-body .btn-green {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #81d66c, #25c410);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+
+  .card-body .btn-blue {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #4687e9, #46c2f3);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+
+  
+    .card {
+      width: 80%;
+    }
+  }
+  
