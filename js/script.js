@@ -1,3 +1,11 @@
+window.onload = function() {
+  document.getElementById("pagetrans").classList.add("load");
+}
+
+window.BeforeUnloadEvent = function(){
+  document.getElementById("pagetrans").classList.remove("load");
+  document.getElementById("pagetrans").classList.add("leave");
+}
 
 function shop(){
     window.location="/shop.html";
@@ -12,11 +20,24 @@ function home(){
 }
 
 function show(){
-  document.getElementById("dark").style.display = "all";
+  document.getElementById("dark").style.display = "block";
 }
 
 function hide(){
   document.getElementById("dark").style.display = "none";
+}
+
+
+function copyy() {
+  // Get the text field
+  var copyText = "frog@frog.com";
+
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText);
+
+  // Alert the copied text
+  alert("Copied the text: " + copyText);
 }
 
 /*
